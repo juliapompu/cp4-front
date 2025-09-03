@@ -33,6 +33,26 @@
                 </form>
             </div>
                 <br>
+                <br>
+            <!-- <script src="src/js/script.js"></script> faz a barra de pesquisa funcionar na tecnica
+            <script>
+            document.querySelector('.pesquisa form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const valor = document.querySelector('.pesquisa input').value.trim().toLowerCase();
+                if (valor === 'produtos') {
+                    document.getElementById('produtos').scrollIntoView({ behavior: 'smooth' });
+                }
+            }); -->
+            </script>
+            <div class="carousel-texto">
+                <h3>PROMOÇÃO</h3>
+                <p>
+                    Combo Beauty- Compre o Shampoo e condiconador da nossa linha e ganhe de brinde: um frasco de hidratante sabor pitaya e sabonetes!
+                    De: R$ 250,00
+                    Para: R$ 129,00
+                </p>
+            </div>
+                <br>
             <div class="carrossel">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -66,9 +86,11 @@
             <br>
                 <div class="Nossos-produtos">
                     <div class="card" style="width: 18rem;" data-categoria="beleza">
+                        <div class="card-img">
                         <img src="src/assets/beleza1.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Combo Beauty</h5>
+                            <h5 class="card-title titulo-card">Combo Beauty</h5>
                             <p class="card-text">Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!
                                 <br>Por:
                             </p>
@@ -86,7 +108,9 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;" data-categoria="acessorios">
-                        <img src="src/assets/brincos2.jpeg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
+                        <div class="card-img">
+                            <img src="src/assets/brincos2.jpeg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Brincos imitando corais</h5>
                             <p class="card-text">Brincos feitos com resina reciclável dobrável.

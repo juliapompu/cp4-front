@@ -81,11 +81,12 @@ nav a {
 /* CARROSSEL */
 
 .carousel {
-    width: 600px;
+    width: 40%;
     padding: 20px;
     margin: 0 auto;
+    border: 2px solid #ccc;
     border-radius: 20px;
-    box-shadow: 0 5px 5px rgb(0 0 0 )
+    box-shadow: 0 5px 5px #ccc;
 }
 
 .carousel .caroseul-item :active{
@@ -93,6 +94,18 @@ nav a {
     height: 350px;  
     border-radius: 20px;
     display: block;
+}
+
+.carousel-texto h3{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.carousel-texto p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -109,10 +122,67 @@ nav a {
 .card {
     border: 1px solid #ccc;
     border-radius: 8px;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.titulo-produtos{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom:50px;
+
+}
+
+.card-img{
+    height: 286px;
+    max-height: 286px;
+    display: flex;
+    align-items: center;
+}
+.card-img img{
+    margin: 0 auto;
+    
+    max-height: 286px;
+}
+.card-body h5{
+    text-align: center;
+    height: 24px;
+    overflow: hidden;
+}
+
+.card-body p{
+    height: 96px;
+    display: flex;
+   
+    align-items: center;
+}
+
+/*BARRA DE PESQUISA*/
+
+.pesquisa .pesquisa button, .pesquisa input{
+
+    justify-content: flex-end;
+    width: 650px;
+    background-color: #f3f3f3;
+    font-size: 18px;
+} /*preciso deixar no lado direito*/ 
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+
+/*PÁGINA DE CATEGORIA*/
+
+.produtos{
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0) ;
     text-align: center;
 }
 
-.titulo-produtos h2 {
-    text-align: center;
-}
