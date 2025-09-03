@@ -26,7 +26,7 @@
                     </nav>
                 </header>
             </div>
-
+                <br>
             <div class="carrossel">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -42,7 +42,7 @@
                         <img src="src/assets/bolsa1.jpg" class="d-block w-100" alt="bolsa feita de linhas de crochê Industrial vegano">
                         </div>
                         <div class="carousel-item">
-                        <img src="src/assets/bolsa2.jpg" class="d-block w-100" alt="oculos de sol feitos de madeira">
+                        <img src="src/assets/beleza3.jpg" class="d-block w-100" alt="Nossa linha de Shampoo e condicionador com cheiro de maracujás vegano">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -55,6 +55,58 @@
                     </button>
                 </div>
             </div>
+            <br><br><br>
+            <h2 class="titulo-produtos">Nossos Produtos</h2>
+            <br>
+                <div class="Nossos-produtos">
+                    <div class="card" style="width: 18rem;" data-categoria="beleza">
+                        <img src="src/assets/beleza1.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Beauty</h5>
+                            <p class="card-text">Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!
+                                <br>Por:
+                            </p>
+                            <a href="src/pages/categorias.html" class="btn btn-primary">R$: 129,00</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-categoria="roupas">
+                        <img src="src/assets/blusa-estampada.jpg" class="card-img-top" alt="Blusa com estampa de floresta feita com materiais reclicados">
+                        <div class="card-body">
+                            <h5 class="card-title">Blusa branca estampada</h5>
+                            <p class="card-text">Blusa branca com estampa de floresta feita com materiais reciclados.
+                                <br>Por:
+                            </p>
+                            <a href="src/pages/categorias.html" class="btn btn-primary">R$: 80,00</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-categoria="acessorios">
+                        <img src="src/assets/brincos2.jpeg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
+                        <div class="card-body">
+                            <h5 class="card-title">Brincos imitando corais</h5>
+                            <p class="card-text">Brincos feitos com resina reciclável dobrável.
+                                <br>Por:
+                            </p>
+                            <a href="src/pages/categorias.html" class="btn btn-primary">R$: 50,00</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;" data-categoria="acessorios">
+                        <img src="src/assets/oculos-de-sol.jpg" class="card-img-top" alt="Óculos de sol feitos com bambu">
+                        <div class="card-body">
+                            <h5 class="card-title">Óculos de Sol</h5>
+                            <p class="card-text">óculos de Sol feitos com folhas de bambu.
+                                <br>Por:
+                            </p>
+                            <a href="src/pages/categorias.html" class="btn btn-primary">R$: 250,00</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filtros-categorias" style="text-align:center; margin-bottom:20px;">
+                    <button onclick="filtrarCards('todos')">Todos</button>
+                    <button onclick="filtrarCards('beleza')">Beleza</button>
+                    <button onclick="filtrarCards('roupas')">Roupas</button>
+                    <button onclick="filtrarCards('acessorios')">Acessórios</button>
+                </div>
 
             <BR><br>
         <footer class="footer">
