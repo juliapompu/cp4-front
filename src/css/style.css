@@ -56,21 +56,21 @@ nav a {
     left: 0;
 }
 
-/* pag categorias- nav segundaria*/
+/* pag categorias-filtros*/
 
 
-.nav-secundaria{
+.filtros-categorias{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.nav-secundaria a {
+.filtros-categorias button {
     color: black;
     text-decoration: none;
 }
-.segunda-nav{
+.filtros-categorias{
     background: linear-gradient(90deg, #38c1ce, #36f1d2, #25d06f); 
     color: black;
     padding: 10px 0; 
