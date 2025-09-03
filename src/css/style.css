@@ -52,8 +52,7 @@ nav a {
 }
 
 .footer {
-    position: flex;
-    bottom: 0;
+    position: bottom;
     left: 0;
 }
 
@@ -76,4 +75,20 @@ nav a {
     color: black;
     padding: 10px 0; 
     text-align: center;
+}
+
+
+
+
+.carousel {
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgb(0 0 0 )
+}
+
+.carousel .caroseul-item{
+    max-width: 10px;
+
 }
