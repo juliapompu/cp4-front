@@ -108,6 +108,13 @@ nav a {
     color: rgb(0, 0, 0);
 }
 
+.carousel .caption-bg {
+    background: rgba(49, 49, 49, 0.6); 
+    border-radius: 10px;
+    width:100%;
+    padding: 10px 20px;
+    display: inline-block;
+}
 
 /* CARDS PÁGINA INICIAL */
 
