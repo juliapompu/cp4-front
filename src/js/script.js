@@ -1,5 +1,5 @@
 function filtrarCards(categoria) {
-    const cards = document.querySelectorAll('.Nossos-produtos .card');
+    const cards = document.querySelectorAll('.Nossos-produtos .card, .Nossos-produtos2 .card2, .Nossos-produtos3 .card');
     cards.forEach(card => {
         if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
             card.style.display = 'flex';
@@ -21,32 +21,32 @@ function updateFilterCounts() {
     });
 }
 
-// // Função para filtrar os cards
-// function filterCards() {
-//     const filters = document.querySelectorAll('.filter-category:checked');
-//     const selectedCategories = Array.from(filters).map(filter => filter.value);
+// Função para filtrar os cards
+function filterCards() {
+    const filters = document.querySelectorAll('.filter-category:checked');
+    const selectedCategories = Array.from(filters).map(filter => filter.value);
 
-//     const cards = document.querySelectorAll('.card');
-//     cards.forEach(card => {
-//         const cardCategories = card.getAttribute('data-categories').split(', ');
-//         const isVisible = selectedCategories.every(category => cardCategories.includes(category));
-//         card.style.display = isVisible ? 'block' : 'none'; // Exibe ou oculta o card com base no filtro
-//     });
-// }
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const cardCategories = card.getAttribute('data-categories').split(', ');
+        const isVisible = selectedCategories.every(category => cardCategories.includes(category));
+        card.style.display = isVisible ? 'block' : 'none'; // Exibe ou oculta o card com base no filtro
+    });
+}
 
-// // Event listeners para os filtros
-// document.querySelectorAll('.filter-category').forEach(filter => {
-//     filter.addEventListener('change', () => {
-//         filterCards();
-//         updateFilterCounts();
-//     });
-// });
+// Event listeners para os filtros
+document.querySelectorAll('.filter-category').forEach(filter => {
+    filter.addEventListener('change', () => {
+        filterCards();
+        updateFilterCounts();
+    });
+});
 
-// // Inicializa o filtro ao carregar a página
-// window.onload = function() {
-//     updateFilterCounts();
-//     filterCards();
-// };
+// Inicializa o filtro ao carregar a página
+window.onload = function() {
+    updateFilterCounts();
+    filterCards();
+};
 
 
 

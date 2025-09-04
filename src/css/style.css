@@ -164,6 +164,8 @@ nav a {
 }
 
 
+
+
 /*PÁGINA DE CATEGORIA*/
 
 .card2 {
@@ -185,19 +187,6 @@ nav a {
     overflow: hidden;
 }
 
-.card-button2{
-    border: 2px solid #0d6efd;
-    border-radius: 70px;
-    width:90px;
-    align-items: center;
-    justify-content: center;    
-    margin: 0 auto;
-    background-color: #0d6efd;
-}
-
-.card-button2 a{
-    color:white;
-}
 
 
 /*BARRA DE PESQUISA*/
@@ -222,8 +211,18 @@ nav a {
 
 .filtros-categorias button {
     color: black;
+    background-color:rgb(169, 255, 241);
+    border-color:rgb(48, 111, 117);
     text-decoration: none;
 }
+
+.filtros-categorias button:hover {
+    background-color:rgb(255, 255, 255); 
+    color: black; 
+    border-color:rgb(48, 111, 117); 
+}
+
+
 .filtros-categorias{
     background: linear-gradient(90deg, #38c1ce, #36f1d2, #25d06f); 
     color: black;
