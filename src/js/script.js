@@ -47,3 +47,27 @@ function updateFilterCounts() {
 //     updateFilterCounts();
 //     filterCards();
 // };
+
+
+
+
+const cartButton = document.getElementById('cart-button');
+const cartSidebar = document.getElementById('cart-sidebar');
+const closeCart = document.getElementById('close-cart');
+
+cartButton.addEventListener('click', () => {
+  cartSidebar.classList.add('visible');
+});
+
+closeCart.addEventListener('click', () => {
+  cartSidebar.classList.remove('visible');
+});
+
+
+const cartItems = document.getElementById('cart-items');
+
+function addToCart(productName) {
+  const item = document.createElement('li');
+  item.textContent = productName;
+  cartItems.appendChild(item);
+}
