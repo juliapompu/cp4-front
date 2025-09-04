@@ -176,51 +176,7 @@ nav a {
 
 /*PÁGINA DE CATEGORIA*/
 
-.produtos {
-   display: flex;
-   margin-bottom: 50px;
-   justify-content: center;
-   gap: 50px;
-}
 
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0);
-    text-align: center;
-}
-
-.titulo-produtos{
-    text-align: center;
-    font-size: 70px;
-    margin-top: 50px;
-    margin-bottom:50px;
-
-}
-
-.card-img{
-    height: 200px;
-    max-height: 200px;
-    display: flex;
-    align-items: center;
-}
-.card-img img{
-    margin: 0 auto;
-    max-height: 200px;
-}
-.card-body h5{
-    text-align: center;
-    height: 30px;
-    overflow: hidden;
-    font-size: 20px;
-}
-
-.card-body p{
-    height: 96px;
-    display: flex;
-   font-size: 25px;
-    align-items: center;
-}
 
 /* pag categorias-filtros*/
 
