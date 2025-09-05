@@ -1,3 +1,4 @@
+//FILTRO PÁGINA CATEGORIAS
 function filtrarCards(categoria) {
     const cards = document.querySelectorAll(
         '.Nossos-produtos .card, .Nossos-produtos2 .card, .Nossos-produtos2 .card2, .Nossos-produtos3 .card, .Nossos-produtos3 .card2'
@@ -14,9 +15,7 @@ function filtrarCards(categoria) {
 
 
 
-
-
-
+//CARRINHO
    let carrinho = [];
 
 function adicionarAoCarrinho(produto) {
@@ -43,22 +42,22 @@ function atualizarCarrinho() {
   cartCount.textContent = carrinho.length;
 }
 
-// Seletores
+
 const cartIcon = document.getElementById("cartIcon");
 const cartModal = document.getElementById("cartModal");
 const closeCart = document.getElementById("closeCart");
 
-// Abrir modal
+
 cartIcon.addEventListener("click", () => {
   cartModal.classList.add("open");
 });
 
-// Fechar modal
+
 closeCart.addEventListener("click", () => {
   cartModal.classList.remove("open");
 });
 
-// Botões "Adicionar ao carrinho"
+
 document.querySelectorAll('.adicionar-carrinho').forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -73,6 +72,6 @@ document.querySelectorAll('.adicionar-carrinho').forEach(btn => {
 const clearCartBtn = document.getElementById("clearCart");
 
 clearCartBtn.addEventListener("click", () => {
-  carrinho = []; // esvazia array
-  atualizarCarrinho(); // atualiza tela
+  carrinho = []; 
+  atualizarCarrinho(); 
 });

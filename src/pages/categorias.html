@@ -19,13 +19,7 @@
                         <img id="cartIcon" src="../assets/carrinho.png" alt="Carrinho" class="cart-icon">
                         <span id="cartCount" class="cart-count">0</span>
                         </div>
-
-                    <!-- Página de categoria com produtos -->
-                    <div class="product-list" id="productList">
-                        <!-- Produtos serão inseridos dinamicamente pelo script -->
-                    </div>
-
-                    <!-- Modal lateral do carrinho -->
+                    <div class="product-list" id="productList"></div>
                     <div id="cartModal" class="cart-modal">
                         <h2>Seu Carrinho</h2>
                         <ul id="cartList"></ul>
@@ -52,17 +46,21 @@
 
         <br>
         <br>
+       
             <div class="Nossos-produtos">
-                    <div class="card" style="width: 18rem;" data-categoria="beleza"  data-nome="Combo Beauty" data-preco="129,00">
+                    <div class="card" style="width: 18rem;" 
+                        data-categoria="beleza" 
+                        data-nome="Combo Beauty" 
+                        data-preco="129.00" 
+                        data-descricao="Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!"
+                        data-imagem="../assets/beleza1.jpg">
                         <div class="card-img">
-                        <img src="../assets/beleza1.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes" data-categoria="beleza">
+                            <img src="../assets/beleza1.jpg" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title titulo-card">Combo Beauty</h5>
-                            <p class="card-text">Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!
-                                por: R$129,00
-                            </p>
-                           <div class="card-button2">
+                            <p class="card-text">Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!</p>
+                            <div class="card-button2">
                                 <button class="btn btn-success adicionar-carrinho"
                                     data-nome="Combo Beauty"
                                     data-preco="129.00"
@@ -86,6 +84,7 @@
                                 >Adicionar ao carrinho</button>
                             </div>
                         </div>
+                        <div class="product-overlay"></div> 
                     </div>
                     <div class="card" style="width: 18rem;" data-categoria="acessorios" data-nome="Brincos Corais" data-preco="30,00">
                         <div class="card-img">
