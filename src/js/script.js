@@ -105,12 +105,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
         modal.show();
       });
-    });
-   document.getElementById('modalAdicionarCarrinho').addEventListener('click', function () {
-  const nome = this.getAttribute('data-nome');
-  const preco = parseFloat(this.getAttribute('data-preco'));
-
-  adicionarAoCarrinho({ nome, preco }); // passa como objeto
-
-  modal.hide();
-})});
+    })});
+ 
