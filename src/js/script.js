@@ -1,5 +1,8 @@
 function filtrarCards(categoria) {
-    const cards = document.querySelectorAll('.Nossos-produtos .card, .Nossos-produtos2 .card2, .Nossos-produtos3 .card');
+    const cards = document.querySelectorAll(
+        '.Nossos-produtos .card, .Nossos-produtos2 .card, .Nossos-produtos2 .card2, .Nossos-produtos3 .card, .Nossos-produtos3 .card2'
+    );
+
     cards.forEach(card => {
         if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
             card.style.display = 'flex';
@@ -9,44 +12,6 @@ function filtrarCards(categoria) {
     });
 }
 
-// Função para atualizar os contadores de filtros
-function updateFilterCounts() {
-    const filters = document.querySelectorAll('.filter-category');
-    filters.forEach(filter => {
-        // Conta quantos cards têm a categoria correspondente
-        const category = filter.value;
-        const count = document.querySelectorAll(`.card[data-categories*="${category}"]`).length;
-        const countElement = filter.nextElementSibling;
-        countElement.textContent = count; // Atualiza o contador ao lado do filtro
-    });
-}
-
-// Função para filtrar os cards
-function filterCards() {
-    const filters = document.querySelectorAll('.filter-category:checked');
-    const selectedCategories = Array.from(filters).map(filter => filter.value);
-
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        const cardCategories = card.getAttribute('data-categories').split(', ');
-        const isVisible = selectedCategories.every(category => cardCategories.includes(category));
-        card.style.display = isVisible ? 'block' : 'none'; // Exibe ou oculta o card com base no filtro
-    });
-}
-
-// Event listeners para os filtros
-document.querySelectorAll('.filter-category').forEach(filter => {
-    filter.addEventListener('change', () => {
-        filterCards();
-        updateFilterCounts();
-    });
-});
-
-// Inicializa o filtro ao carregar a página
-window.onload = function() {
-    updateFilterCounts();
-    filterCards();
-};
 
 
 

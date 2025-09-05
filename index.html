@@ -17,31 +17,23 @@
                     <img src="src/assets/icone.png" alt="Logo da EcoTrend" class="logo"></img>
                     <h3>Bem-vindo à EcoTrend! Sua loja Ecológica!</h3>
                     <br>
+                    <div style="position: relative;">
+                          <img id="cartIcon" src="src/assets/carrinho.png" alt="Carrinho" class="cart-icon">
+                          <span id="cartCount" class="cart-count">0</span>
+                          </div>
+                      <div class="product-list" id="productList"></div>
+                      <div id="cartModal" class="cart-modal">
+                          <h2>Seu Carrinho</h2>
+                          <ul id="cartList"></ul>
+                          <p class="total" id="cartTotal">Total: R$ 0,00</p>
+                          <button id="clearCart" class="clear-cart">Limpar Carrinho</button>
+                          <button id="closeCart" class="close-cart">Fechar</button>
+                      </div>
                     <nav class="nav">
                         <a href="index.html">Home</a>
                         <a href="src/pages/categorias.html">Produtos</a>
                         <a href="src/pages/contato.html">Contato</a>
                     </nav>
-        
-                        <h1>Minha Loja</h1>
-                        <div style="position: relative;">
-                        <img id="cartIcon" src="src/assets/carrinho.png" alt="Carrinho" class="cart-icon">
-                        <span id="cartCount" class="cart-count">0</span>
-                        </div>
-
-                    <!-- Página de categoria com produtos -->
-                    <div class="product-list" id="productList">
-                        <!-- Produtos serão inseridos dinamicamente pelo script -->
-                    </div>
-
-                    <!-- Modal lateral do carrinho -->
-                    <div id="cartModal" class="cart-modal">
-                        <h2>Seu Carrinho</h2>
-                        <ul id="cartList"></ul>
-                        <p class="total" id="cartTotal">Total: R$ 0,00</p>
-                        <button id="closeCart" class="close-cart">Fechar</button>
-                    </div>
-
                 </header>
 
             <div class="pesquisa">
