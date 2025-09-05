@@ -22,27 +22,37 @@
                         <a href="src/pages/categorias.html">Produtos</a>
                         <a href="src/pages/contato.html">Contato</a>
                     </nav>
-                    <button id="cart-button">
-                        <img src="src/assets/carrinho.png"  alt="Ícone de carrinho de compras" class="carrinho"></img>
-                    </button>
-                    <div id="cart-sidebar" class="hidden">
-                        <h2>Seu Carrinho</h2>
-                        <ul id="cart-items"></ul>
-                        <button id="close-cart">Fechar</button>
+                    <div class="navbar">
+                        <h1>Minha Loja</h1>
+                        <button id="btnCart" class="cart-btn">Carrinho (0)</button>
+                    </div>
                 </header>
             </div>
 
-                <!-- Botão do carrinho
-            <button id="cart-button">
-                <img src="src/assets/carrinho.png" alt="Ícone de carrinho de compras" class="carrinho"></img>
-            </button>
-
-                Carrinho lateral 
-            <div id="cart-sidebar" class="hidden">
-            <h2>Seu Carrinho</h2>
-            <ul id="cart-items"></ul>
-            <button id="close-cart">Fechar</button>
+            <!-- <div class="product-list">
+                <div class="product">
+                <h3>Produto 1</h3>
+                <p class="price" onclick="adicionarAoCarrinho('Produto 1', 50)">R$ 50,00</p>
+                </div>
+                <div class="product">
+                <h3>Produto 2</h3>
+                <p class="price" onclick="adicionarAoCarrinho('Produto 2', 80)">R$ 80,00</p>
+                </div>
+                <div class="product">
+                <h3>Produto 3</h3>
+                <p class="price" onclick="adicionarAoCarrinho('Produto 3', 120)">R$ 120,00</p>
+                </div>
             </div> -->
+
+            <!-- Modal do Carrinho -->
+            <div id="cartModal" class="cart-modal">
+                <div class="cart-header">
+                <h2>Seu Carrinho</h2>
+                <button class="close-btn" id="closeCart">X</button>
+                </div>
+                <ul id="cartList"></ul>
+                <p class="total" id="cartTotal">Total: R$ 0,00</p>
+            </div>
 
             <div class="pesquisa">
                 <form class="d-flex" role="search">
