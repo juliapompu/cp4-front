@@ -17,7 +17,7 @@ Nosso diferencial é que os produtos vendidos na nossa loja são totalmente sust
 ---
 
 ## Github Pages
-  
+  https://juliapompu.github.io/cp4-front/
 ---
 
 ## 🛠️ Funcionalidades
