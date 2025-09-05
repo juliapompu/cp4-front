@@ -21,13 +21,10 @@ header h3 {
     height: auto;
     border-radius: 50%;
     margin-left: 50px;
-
-}
-
-.header .carrinho {
-    max-width: 80px;
-    border-radius: 50%;
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -60px;
+    margin-top: 20px;
 
 }
 
@@ -64,6 +61,132 @@ nav a {
     position: bottom;
     left: 0;
 }
+
+
+/* RESPONSIVIDADE */
+   
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+
+/* For devices with a screen width up to 768px (like tablets) */
+@media screen and (max-width: 768px) {
+  /* Basic body adjustments for smaller screens */
+  body {
+    flex-direction: column;
+  }
+  
+  /* Make cards and their content fill the full width */
+  .card, .card2, .card-body, .card-body2 {
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between stacked cards */
+  }
+
+  /* Make sure the product rows stack correctly */
+  .Nossos-produtos, .Nossos-produtos2, .Nossos-produtos3 {
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center them horizontally */
+    gap: 20px; /* Reduce the space between stacked items */
+  }
+  
+  /* Adjust the carousel to be full-width */
+  .carousel {
+    width: 90%;
+  }
+
+  /* Make sure the carousel images fit */
+  .carousel .caroseul-item :active {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the size of the search bar */
+  .pesquisa .pesquisa button, .pesquisa input {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+
+  /* Adjust the header layout */
+  header h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust navigation for tablets */
+  nav {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+  }
+}
+
+/* For devices with a screen width up to 480px (like mobile phones) */
+@media screen and (max-width: 480px) {
+  /* Hide the logo on very small screens to save space */
+  .header .logo {
+    display: flex-end;
+    width: 20px;
+  }
+  
+  /* Adjust font sizes to be more readable on small screens */
+  .titulo-produtos {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+.carousel{
+   margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: fit-content;
+}
+  .carousel-texto h3 {
+    font-size: 15px;
+  }
+
+  .carousel-texto p {
+    font-size: 1px;
+  }
+
+  /* Adjust the footer layout */
+  .footer {
+    flex-direction: column; /* Stack footer sections vertically */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    text-align: center; /* Center the text in footer sections */
+  }
+
+  /* Adjust form container for contact page */
+  .form-container {
+    padding: 0 15px; /* Add some horizontal padding */
+  }
+
+  .form-container form {
+    padding: 20px; /* Reduce form padding */
+  }
+
+  /* Adjust the shopping cart icon position */
+  .cart-icon {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .cart-count {
+    bottom: 25px;
+    right: 0px;
+  }
+  
+  /* Adjust the filters on the category page */
+  .filtros-categorias {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .filtros-categorias button {
+    width: 100%; /* Make filter buttons full-width */
+    box-sizing: border-box;
+  }
+}
+
 
 
 
@@ -332,14 +455,14 @@ nav a {
   height: auto;
   cursor: pointer;
   position: absolute;
-  top: 10px;
+ bottom: 10px;
   right: 20px;
 }
 
 
 .cart-count {
   position: absolute;
-  top: 0;
+    bottom: 30px;
   right: 15px;
   background: red;
   color: white;
