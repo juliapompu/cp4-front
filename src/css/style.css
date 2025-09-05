@@ -204,13 +204,6 @@ nav a {
     border-color:rgb(48, 111, 117); 
 }
 
-
-.filtros-categorias{
-    background: linear-gradient(90deg, #38c1ce, #36f1d2, #25d06f); 
-    color: black;
-    padding: 10px 0; 
-    text-align: center;
-}
 .card,
 .card2 {
     display: flex;
@@ -233,6 +226,17 @@ nav a {
     justify-content: center; 
 }
 
+.ver-mais {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  margin: 10px;
+}
+
+.ver-mais:hover {
+  background-color: #0b5ed7; 
+  border-color: #0a58ca;
+}
 
 
 /*BARRA DE PESQUISA*/
@@ -325,15 +329,15 @@ nav a {
   height: auto;
   cursor: pointer;
   position: absolute;
- bottom: 10px;
-  right: 20px;
+    right: 60px;
+    bottom:0;
 }
 
 
 .cart-count {
   position: absolute;
-    bottom: 30px;
-  right: 15px;
+    bottom: 20px;
+  right: 50px;
   background: red;
   color: white;
   font-size: 14px;
@@ -348,20 +352,19 @@ nav a {
   padding: 5px 10px;
   cursor: pointer;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom:10px ;
 }
 
 
 .adicionar-carrinho {
-  background-color: #0d6efd !important;
-  border-color: #0d6efd !important;
-  color: #fff !important;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
 }
 .adicionar-carrinho:hover {
-  background-color: #0b5ed7 !important; 
-  border-color: #0a58ca !important;
+  background-color: #0b5ed7; 
+  border-color: #0a58ca;
 }
-
 
 
 
@@ -383,15 +386,10 @@ body {
 }
   
 
-.carousel {
-    width: 90%;
-}
+
 
  
-.carousel .caroseul-item :active {
-    width: 100%;
-    height: auto;
-}
+
 
   
 .pesquisa .pesquisa button, .pesquisa input {
@@ -417,24 +415,18 @@ nav {
 .header .logo {
     display: none;
 }
+.nav {
+    display: flex;
+    justify-items: center;
+}
+}
   
 .titulo-produtos {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.carousel{
-   margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: fit-content;
-}
-.carousel-texto h3 {
-    font-size: 15px;
-}
 
-.carousel-texto p {
-    font-size: 1px;
-}
 .footer {
     flex-direction: column; 
     align-items: center;
@@ -453,25 +445,13 @@ nav {
 .form-container form {
     padding: 20px; 
 }
-.cart-icon {
-    bottom: 5px;
-    right: 5px;
-}
 
-.cart-count {
-    bottom: 25px;
-    right: 0px;
-}
-  
-
-.filtros-categorias {
-    flex-direction: column;
+.filtros-categorias  {
     gap: 10px;
     padding: 10px;
 }
 
 .filtros-categorias button {
-    width: 100%; 
     box-sizing: border-box;
 }
-}
+

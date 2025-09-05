@@ -1,4 +1,5 @@
 //FILTRO PÁGINA CATEGORIAS
+
 function filtrarCards(categoria) {
     const cards = document.querySelectorAll(
         '.Nossos-produtos .card, .Nossos-produtos2 .card, .Nossos-produtos2 .card2, .Nossos-produtos3 .card, .Nossos-produtos3 .card2'
@@ -16,6 +17,7 @@ function filtrarCards(categoria) {
 
 
 //CARRINHO
+
    let carrinho = [];
 
 function adicionarAoCarrinho(produto) {
@@ -75,3 +77,41 @@ clearCartBtn.addEventListener("click", () => {
   carrinho = []; 
   atualizarCarrinho(); 
 });
+
+
+
+// ABA DE PRODUTOS
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = new bootstrap.Modal(document.getElementById('produtoModal'));
+    const verMaisButtons = document.querySelectorAll('.ver-mais');
+
+    verMaisButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const nome = button.getAttribute('data-nome');
+        const descricao = button.getAttribute('data-descricao');
+        const preco = button.getAttribute('data-preco');
+        const imagem = button.getAttribute('data-imagem');
+
+        document.getElementById('modalNome').innerText = nome;
+        document.getElementById('modalDescricao').innerText = descricao;
+        document.getElementById('modalPreco').innerText = `R$ ${parseFloat(preco).toFixed(2)}`;
+        document.getElementById('modalImagem').src = imagem;
+
+        const btnAdd = document.getElementById('modalAdicionarCarrinho');
+        btnAdd.setAttribute('data-nome', nome);
+        btnAdd.setAttribute('data-preco', preco);
+
+        modal.show();
+      });
+    });
+    document.getElementById('modalAdicionarCarrinho').addEventListener('click', function () {
+      const nome = this.getAttribute('data-nome');
+      const preco = this.getAttribute('data-preco');
+
+      adicionarAoCarrinho(nome, parseFloat(preco));
+      
+      modal.hide();
+    });
+  });
