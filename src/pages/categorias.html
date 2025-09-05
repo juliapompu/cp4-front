@@ -19,6 +19,25 @@
                         <a href="../pages/categorias.html">Produtos</a>
                         <a href="../pages/contato.html">Contato</a>
                 </nav>
+                <h1>Minha Loja</h1>
+                        <div style="position: relative;">
+                        <img id="cartIcon" src="../assets/carrinho.png" alt="Carrinho" class="cart-icon">
+                        <span id="cartCount" class="cart-count">0</span>
+                        </div>
+
+                    <!-- Página de categoria com produtos -->
+                    <div class="product-list" id="productList">
+                        <!-- Produtos serão inseridos dinamicamente pelo script -->
+                    </div>
+
+                    <!-- Modal lateral do carrinho -->
+                    <div id="cartModal" class="cart-modal">
+                        <h2>Seu Carrinho</h2>
+                        <ul id="cartList"></ul>
+                        <p class="total" id="cartTotal">Total: R$ 0,00</p>
+                        <button id="clearCart" class="clear-cart">Limpar Carrinho</button>
+                        <button id="closeCart" class="close-cart">Fechar</button>
+                    </div>
             </header>
         </div>
         <div class="filtros-categorias" style="margin-bottom: 30px; justify-content: center;">
@@ -32,21 +51,24 @@
         <br>
         <br>
             <div class="Nossos-produtos">
-                    <div class="card" style="width: 18rem;" data-categoria="beleza">
+                    <div class="card" style="width: 18rem;" data-categoria="beleza"  data-nome="Combo Beauty" data-preco="129,00">
                         <div class="card-img">
                         <img src="../assets/beleza1.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes" data-categoria="beleza">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title titulo-card">Combo Beauty</h5>
                             <p class="card-text">Shampoo, condicionador e de brinde: um frasco de hidratante sabor pitaya e sabonetes!
-                    
+                                por: R$129,00
                             </p>
-                            <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 129,00</a>
+                           <div class="card-button2">
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Combo Beauty"
+                                    data-preco="129.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;" data-categoria="roupas">
+                    <div class="card" style="width: 18rem;" data-categoria="roupas" data-nome="Blusa Branca Estampada" data-preco="80,00">
                         <div class="card-img">
                         <img src="../assets/blusa-estampada.jpg" class="card-img-top" alt="Blusa com estampa de floresta feita com materiais reclicados">
                         </div>
@@ -56,11 +78,14 @@
                           
                             </p>
                             <div class="card-button2">
-                            <a href="../pages/categorias.html" class="btn btn-primary">R$: 80,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Blusa Branca Estampada"
+                                    data-preco="80.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;" data-categoria="acessorios">
+                    <div class="card" style="width: 18rem;" data-categoria="acessorios" data-nome="Brincos Corais" data-preco="30,00">
                         <div class="card-img">
                             <img src="../assets/brincos2.jpeg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
                         </div>
@@ -70,11 +95,14 @@
                           
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 30,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Brinco Corais"
+                                    data-preco="30.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;" data-categoria="acessorios">
+                    <div class="card" style="width: 18rem;" data-categoria="acessorios" data-nome="Óculos de sol" data-preco="250,00">
                         <img src="../assets/oculos-de-sol.jpg" class="card-img-top" alt="Óculos de sol feitos com bambu">
                         <div class="card-body">
                             <h5 class="card-title">Óculos de Sol</h5>
@@ -82,7 +110,10 @@
                           
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 250,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="óculos de Sol"
+                                    data-preco="250.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -90,21 +121,24 @@
 
             <BR><br>
                 <div class="Nossos-produtos2">
-                    <div class="card" style="width: 18rem;" data-categoria="beleza">
+                    <div class="card" style="width: 18rem;" data-categoria="beleza" data-nome="vitamina C" data-preco="100,00">
                         <div class="card-img2">
                             <img src="../assets/beleza2.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes" data-categoria="beleza">
                         </div>
                         <div class="card-body2">
                             <h5 class="card-title titulo-card2">Vitaminas C</h5>
                             <p class="card-text2">Kit com 3 frascos de vitamina C, que ajudam na imunidade e saúde da pele.
-                          
+                            Por: R$100,00
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 100,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="vitamina C"
+                                    data-preco="100.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card2" style="width: 18rem;" data-categoria="acessorios">
+                    <div class="card2" style="width: 18rem;" data-categoria="acessorios" data-nome="Bolsa de Casca de banana" data-preco="150,00">
                         <div class="card-img">
                         <img src="../assets/bolsa1.jpg" class="card-img-top" alt="Blusa com estampa de floresta feita com materiais reclicados">
                         </div>
@@ -114,11 +148,14 @@
                            
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 150,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Bolsa de Casca de banana"
+                                    data-preco="150.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card2" style="width: 18rem;" data-categoria="acessorios">
+                    <div class="card2" style="width: 18rem;" data-categoria="acessorios" data-nome="Bolsa de lã" data-preco="60,00">
                         <div class="card-img2">
                             <img src="../assets/bolsa2.jpg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
                         </div>
@@ -127,12 +164,15 @@
                             <p class="card-text">Bolsa feita de lã prostetica.
                            
                             </p>
-                            <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 60,00</a>
+                           <div class="card-button2">
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Bolsa de lã"
+                                    data-preco="60.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card2" style="width: 18rem;" data-categoria="acessorios">
+                    <div class="card2" style="width: 18rem;" data-categoria="acessorios" data-nome="Brincos Folha" data-preco="20,00">
                         <div class="card-img2">
                             <img src="../assets/brincos1.jpg" class="card-img-top" alt="Óculos de sol feitos com bambu">
                         </div>
@@ -142,14 +182,17 @@
                             
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 20,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Brincos Foha"
+                                    data-preco="20.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
             <div class="Nossos-produtos3">
-                    <div class="card" style="width: 18rem;" data-categoria="roupas">
+                    <div class="card" style="width: 18rem;" data-categoria="roupas" data-nome="Vestido de Jornal" data-preco="350,00">
                         <div class="card-img2">
                             <img src="../assets/vestido-de-jornais.jpg" class="card-img-top" alt="Promoção de shampoo e condicionador com um pequeno frasco de creme hidratante e três sabonetes" data-categoria="beleza">
                         </div>
@@ -158,12 +201,15 @@
                             <p class="card-text2">Vestido feito com jornais reciclados, ideal para eventos sustentáveis.
                                
                             </p>
-                            <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 350,00</a>
+                           <div class="card-button2">
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="vestido de jornais"
+                                    data-preco="350.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card2" style="width: 18rem;" data-categoria="beleza">
+                    <div class="card2" style="width: 18rem;" data-categoria="beleza" data-nome="Combo Maracupaz" data-preco="100,00">
                         <div class="card-img">
                         <img src="../assets/beleza3.jpg" class="card-img-top" alt="Blusa com estampa de floresta feita com materiais reclicados">
                         </div>
@@ -172,11 +218,14 @@
                             <p class="card-text">Kit com shampoo, condicionador e sabonete líquido feitos com maracujá.
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 100,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Combo Maracupaz"
+                                    data-preco="100.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card2" style="width: 18rem;" data-categoria="roupas">
+                    <div class="card2" style="width: 18rem;" data-categoria="roupas" data-nome="Camiseta lisa" data-preco="100,00">
                         <div class="card-img2">
                             <img src="../assets/blusa_marcareciclagem.jpg" class="card-img-top" alt="Brincos feitos com resina reciclavel dobravel">
                         </div>
@@ -185,7 +234,10 @@
                             <p class="card-text">Feita apartir de algodão reciclado, essa camiseta é super confortável.
                             </p>
                             <div class="card-button2">
-                                <a href="../pages/categorias.html" class="btn btn-primary">R$: 100,00</a>
+                                <button class="btn btn-success adicionar-carrinho"
+                                    data-nome="Blusa Lisa"
+                                    data-preco="100.00"
+                                >Adicionar ao carrinho</button>
                             </div>
                         </div>
                     </div>
