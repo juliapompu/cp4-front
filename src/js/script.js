@@ -106,12 +106,11 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.show();
       });
     });
-    document.getElementById('modalAdicionarCarrinho').addEventListener('click', function () {
-      const nome = this.getAttribute('data-nome');
-      const preco = this.getAttribute('data-preco');
+   document.getElementById('modalAdicionarCarrinho').addEventListener('click', function () {
+  const nome = this.getAttribute('data-nome');
+  const preco = parseFloat(this.getAttribute('data-preco'));
 
-      adicionarAoCarrinho(nome, parseFloat(preco));
-      
-      modal.hide();
-    });
-  });
+  adicionarAoCarrinho({ nome, preco }); // passa como objeto
+
+  modal.hide();
+})});
